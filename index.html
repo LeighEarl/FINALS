@@ -1,0 +1,115 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Helvetica,Calibri,  sans-serif;  
+  background-color: #007bb5;  
+} 
+.greenbox{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+        padding: 5px; 
+        background-color:#066000;
+} 
+.topbox{
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 1px; 
+    background-color:#f58310;
+}
+.container {  
+    margin-top: 1px;
+    margin-bottom: 100px;
+    margin-right: 300px;
+    margin-left: 300px;
+    padding: 70px;  
+    background-color: #99c7e8;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 12px;  
+  margin: 10px 0 10px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+.registerbtn {  
+  background-color: #007a93;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 2;  
+}  
+</style>  
+</head>  
+<body>  
+<form> 
+<div class="greenbox"> 
+    <center><h1 style="color:white;"> UNIVERSITY OF THE CORDILLERAS </h1></center>
+</div>   
+<div class="topbox">  
+    <center>  <h2> UC STUDENT ID REGISTRATION</h2> </center>  
+</div>  
+  <div class="container">  
+    <label> ID Number: </label>
+        <input type="text" name="ID number" maxlength="12" placeholder="Ex:  19-1234-234" />
+	<label> Firstname </label>   
+		<input type="text" name="firstname" placeholder= "Firstname" size="20" required />   
+	<label> Middlename: </label>   
+		<input type="text" name="middlename" placeholder="Middlename" size="20" required />   
+	<label> Lastname: </label>    
+		<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+	<label for="email"><b>Email</b></label>  
+		<input type="text" placeholder="Enter Email" name="email" required>  
+	<label>   
+	Phone :  
+	</label>  
+		<input type="text" name="phone no." placeholder=""  value="+639" size="14"/>   	
+<div>
+	Current Address :  
+	<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  </textarea>    
+	<label>   
+	Gender :  
+	</label><br>  
+	<input type="radio" value="Male" name="gender" checked > Male   
+	<input type="radio" value="Female" name="gender"> Female   
+</div>  
+<div>  
+    <label for="psw"><b>Password</b></label>  
+        <input type="password" placeholder="Jonsnow1" name="psw" size="8" required> 
+<div>  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+		<input type="password" placeholder="Retype Password" name="psw-repeat" required> 
+	<label>   
+	Course :  
+	</label>   
+	<select>  
+	<option value="Course">Course</option>  
+	<option value="BCA">BSIT</option>  
+	<option value="BBA">BSCS</option>  
+	<option value="B.Tech">BSDA</option>  
+	</select>  
+</div>  	
+
+    <button type="submit" class="registerbtn">Register</button>   
+</form>  
+</body>  
+</html>  
